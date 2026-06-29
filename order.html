@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Food</title>
+</head>
+<body>
+    <h1 >Order Food</h1>
+    <a href="index.html">Home</a> |
+    <a href="menu.html">Menu</a> |
+    <a href="contact.html">Contact Us</a><br>
+    <form action="sucess.html" method="post">
+        <label for="cname">Customer Name: </label><br>
+        <input type="text" name="cname" id="cname" placeholder="Enter Name" required><br>
+        <br>
+
+        <label for="email">Enter Email: </label><br>
+        <input type="email" name="email" id="email" placeholder="Enter Email" required><br>
+        <br>
+
+        <label for="mnumber">Enter Mobile Number: </label><br>
+        <input type="number" name="number" id="mnumber" required><br>
+        <br>
+
+        <label for="add">Enter Delivery Address: </label> <br>
+        <textarea name="Address" id="add" rows="10" colums="20"></textarea><br>
+
+        <label for="fitem">Select Food Item: </label>
+        <select name="fitem" id="fitem">
+            <option value="Veg Burger">Veg Burger </option>
+            <option value="Margherita Pizza">Margerita Pizza</option>
+            <option value="Veg Biryani">  Veg Biryani </option>
+            <option value="Cold Coffee">Cold Coffee</option>
+        </select><br>
+        <br>
+
+        <label for="quantity">Enter Quantity: </label><br>
+        <input type="number" name="quantity" id="quantity">
+        <br>
+        <br>
+
+        <label for="payment">Select Payment Method: </label><br>
+        <input type="radio" name="UPI" id="payment">UPI 
+        <input type="radio" name="Net Banking" id="payment">Net Banking
+        <input type="radio" name="Cash" id="payment">Cash
+        <input type="radio" name="Credit Card" id="payment">Credit Card
+
+        <br><br>
+
+        <label for="dtype">Select Delivery Type: </label><br>
+        <input type="radio" name="Standard Delivery" id="dtype">Standard Delivery
+        <input type="radio" name="Express Delivery" id="dtype">Express Delivery
+        <br><br>
+
+        Special Requirements: <br><textarea name="special Requirements" rows="10" cols="50"></textarea><br>
+        <br>
+
+       <input type="submit" value="Place Order">
+       <input type="reset" value="Clear Form">
+    </form>
+</body>
+</html>
